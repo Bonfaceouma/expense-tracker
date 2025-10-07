@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="expenses.css">
+  <title>expense tracker</title>
+
+</head>
+
+<body>
+  <h2 class="add-expense-head">Add Expense</h2>
+
+  <form class="input-data-container">
+
+    <input type="text" maxlength="20" placeholder="title" class="input-title" required>
+    <input type="text" maxlength="20" placeholder="Category" class="input-Category" required>
+    <input type="number" maxlength="20" placeholder="Amount" class="input-Amount" required>
+    <input type="text" maxlength="20" placeholder="note" class="input-note" required>
+    <input type="date" maxlength="20" placeholder="Date" class="input-date" required>
+    <button class="add-expense-button"> Add expense</button>
+
+  </form>
+  <h2 class="my-expense-head">My Expenses</h2>
+
+  <div class="body-container">
+    <table class="table-container">
+      <thead class="table-head">
+        <tr class="table-head-row">
+        <th class="title-column">Title</th>
+        <th class="category-colunm">Category</th>
+        <th class="Amount-column">Amount</th>
+        <th class="note-column">Note</th>
+        <th class="Date-column">Date</th>
+        
+
+        </tr>
+        
+      </thead>
+      <tbody class="table-body">
+
+      </tbody>
+
+      
+      
+    </table>
+
+    <div class="total-amount-container">
+      <h2 class="total-amount-head">Total Amount</h2>
+    
+      <div class="dollar-sign">$<span class="display-total-amount-value">0</span></div>
+    </div>
+</div>
+    
+    
+<script src="expenses.js"></script>
+
+</body>
+
+</html>
